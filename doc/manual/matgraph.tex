@@ -54,25 +54,16 @@ defines helper classes for working with permutations
 
 \subsection{Download and install}
 
-\matgraph\ is available for free from my web site. Go to
+\matgraph\ is available for free from Github. Go to 
 \begin{verbatim}
-http://www.ams.jhu.edu/~ers/matgraph
+https://github.com/scheinerman/matgraph
 \end{verbatim}
-and select the link in the sentence
-``You can download Matgraph by \underline{clicking here}.''
-
-This should cause the file \verb|matgraph-X.X.tgz| to be downloaded to
-your computer. (The \verb|X.X| is the version number.) This is a
-compressed archive. To unpack on a UNIX system, give the command
+and click on the download icon. Alternatively, in a [Unix] shell:
 \begin{verbatim}
-tar xfz matgraph-X.X.tgz
+git clone https://github.com/scheinerman/matgraph
 \end{verbatim}
-(where \verb|X.X| is replaced by the correct version number). On other
-computers, double clicking on the file's icon should serve the same
-purpose.
-
-This should create a directory named \verb|matgraph|. You may move
-this directory to any convenient location on your hard drive.  
+This creates a directory named \verb|matgraph|. You may move this
+directory to any convenient location on your hard drive.
 
 
 
@@ -999,31 +990,32 @@ GRAPH_MAGIC.graphs{g.idx}.array
 This is how we refer to the adjacency matrix of the graph \verb|g|.
 
 \end{multicols}
-\hrule
-\begin{multicols}{2}[\section{Future Projects}]
+% \hrule
+% \begin{multicols}{2}[\section{Future Projects}]
 
-There are many additions I would like for this project. Here are
-few:
-\begin{itemize}
-\item Planarity testing and embedding. I would like an \verb|is_planar|
-  method to test if a graph is planar and a good \verb|planar_embed|
-  method for finding a crossing-free embedding.
+% There are many additions I would like for this project. Here are
+% few:
+% \begin{itemize}
+% \item Planarity testing and embedding. I would like an \verb|is_planar|
+%   method to test if a graph is planar and a good \verb|planar_embed|
+%   method for finding a crossing-free embedding.
 
-\item The \verb|distxy| layout routine works reasonably well, but is
-  hardly fast. It also relies on the  Optimization Toolbox. I'd like a
-  better layout engine.
+% \item The \verb|distxy| layout routine works reasonably well, but is
+%   hardly fast. It also relies on the  Optimization Toolbox. I'd like a
+%   better layout engine.
 
-\item A GUI for creating and editing graphs. I'd like to see this
-  invoked with a command such as \verb|gui(g)| or
-  \verb|graph_edit(g)|.
+% \item A GUI for creating and editing graphs. I'd like to see this
+%   invoked with a command such as \verb|gui(g)| or
+%   \verb|graph_edit(g)|.
   
-\item We need \verb|.m| files for connectivity, edge connectivity,
-  maximum matching (in general graphs), approximate
-  isomorphism, better heuristic coloring algorithms, girth, and so
-  forth.
-\end{itemize}
+% \item We need \verb|.m| files for connectivity, edge connectivity,
+%   maximum matching (in general graphs), approximate
+%   isomorphism, better heuristic coloring algorithms, girth, and so
+%   forth.
+% \end{itemize}
 
-\end{multicols}
+% \end{multicols}
+
 \end{document}
 
 %%% Local Variables: 
