@@ -27,4 +27,5 @@ the GNU General Purpose License (see gpl.txt).
 I have stopped work on matgraph. I provide it here for those who might
 find it useful.  As an alternative, Sage has an excellent suite of
 graph theory tools and I have developed some code in Julia (available
-through my github repositories) as well.
+through my github repositories) as well. 
+Start here: <https://github.com/scheinerman/SimpleGraphs.jl.git>.
