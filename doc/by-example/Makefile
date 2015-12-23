@@ -1,19 +1,9 @@
-.phony: all dvi pdf  ps view clean
+.phony:  clean  
 
-BASE = by-example
-
-all: pdf
-
-
-pdf: $(BASE).pdf
-
-
-$(BASE).pdf: $(BASE).tex
-	pdflatex $(BASE)
-
-view: $(BASE).pdf
-	open $(BASE).pdf
+by-example.pdf: by-example.tex
+	pdflatex by-example
+	pdflatex by-example
 
 
 clean:
-	rm -f $(BASE).log $(BASE).aux $(BASE).dvi $(BASE).out $(BASE).ps
+	rm -rf *.log *.aux *.out auto
